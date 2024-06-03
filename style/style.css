@@ -1,0 +1,139 @@
+@import url(./import.css);
+
+:root{
+    /*ADICIONAR CORES*/
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Sans-serif';
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    /*ADICIONAR COR*/
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    /* Largura em 100% da tela */
+    width: 100%;
+    /* ADICIONAR COR DE FUNDO */
+    /* ADICIONAR TRANSIÇÃO */
+}
+
+h1{
+    /* ADICIONAR O PESO DA FONTE */
+    font-size: 1.7rem;
+    background:linear-gradient(to right, #ff0505, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Conferir SPAN */
+.span{
+    color: black;
+}
+
+.navigation ul{
+    text-transform: uppercase;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navigation ul, li{
+    /* ADICIONANDO COR */
+    font-size: 17px;   
+    /* ADICIONAR TRANSIÇÃO */
+}
+
+.navigation ul li:hover{
+    /* COR PÓS */
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+.menu .barra{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: black;
+    margin: 5px auto;
+    transition: 0.3s;
+}
+
+/* MENU SANDUÍCHE */
+.menu .barra:nth-child(1),
+.menu .barra:nth-child(3){
+    background-color: red;
+}
+
+/******************* MEDIA QUERY *******************/
+@media (max-width:785px) {
+    .navigation{
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .barra:nth-child(1){
+        transform:  translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .barra:nth-child(2) {
+        opacity: 0;
+    }
+    .menu.ativo .barra:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--white);
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .nav-menu.ativo{
+        right: 0;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    /*main*/
+    .home{
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+    }
+    .home .text-h4{
+        font-size: 15px;
+    }
+    .home .text-h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .home p{
+        font-size: 15px;
+    }
+    .home-img{
+        width: 125%;
+    }
+}
