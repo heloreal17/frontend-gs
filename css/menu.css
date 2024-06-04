@@ -1,0 +1,131 @@
+/* PÁGINA INICIAL E BARRA DE SEÇÕES */
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem var(--sombra);
+    width: 100%;
+    background: var(--white);
+    transition: all 0.5s;
+    position: fixed;
+}
+
+.navigation .logo{
+    color: var(--red);
+    font-size: 1.7rem;
+    font-weight: var(--pesada);
+    background: linear-gradient(to right, var(--natureza), var(--oceano));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* .logo span{
+    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+    color: black;
+     background-clip: text;
+    -webkit-background-clip: text;
+} */
+
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navigation ul li a{
+    color: var(--natureza);
+    font-size: 17px;
+    font-weight: 500;
+    transition: var(--transicao);
+}
+
+.navigation ul li a:hover{
+    color: var(--oceano);
+}
+
+.navigation i{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--natureza);
+}
+
+/************************* Página Inicial *********************/
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.753)),
+    url(../image/tartaruga-mar.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+
+}
+
+.home-text{
+    color: var(--white);
+    max-width: 50rem;
+    font-weight: var(--pesada);
+    font-size: 20px;
+}
+
+.home-text .text-h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    font-weight: var(--pesada);
+
+    background: linear-gradient(to right, var(--light-natureza), var(--light-oceano));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+
+.home-text p{
+    margin-bottom: 1.5rem;
+}
+
+.home-btn{
+    border-style: solid;
+    border-color: var(--light-oceano);
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-weight: var(--media);
+    color: var(--light-oceano);
+}
+
+.home-btn:hover{
+    background-color: var(--dark-oceano);
+    transition: var(--transicao);
+}
