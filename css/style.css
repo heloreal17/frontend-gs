@@ -26,7 +26,6 @@
     }
 
     & .textos{
-        font-size: 20px;
         line-height: 2.5rem;
         margin: 25px;
     }
@@ -41,8 +40,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8rem; /* Espaçamento entre os cards */
-    margin-top: 2.5rem;
+    gap: 5rem; /* Espaçamento entre os cards */
+    margin-top: 1rem;
 
     & h4{
         display: flex;
@@ -59,13 +58,11 @@
 
     & .card1{
         background-color: var(--gray);
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 1px 1px 10px var(--gray);
-    max-width: 400px; /* Largura máxima do card */
-    width: 100%; /* Garante que o card se ajuste ao tamanho máximo */
-        
-
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 10px var(--gray);
+        max-width: 400px; /* Largura máxima do card */
+        width: 100%; /* Garante que o card se ajuste ao tamanho máximo */
     }
   
     & .textos{
@@ -74,14 +71,25 @@
         justify-content: center;
         text-align: justify;
         font-size: 18px;
-        margin: 25px;
+        margin: 10px;
+        line-height: 2rem;
+    }
+
+    & .card-textos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        font-size: 15px;
+        margin: 10px;
+        line-height: 1.8rem;
     }
 
     & .card-img{
         width: 100%; /* Tamanho da imagem preenchendo todo o espaço disponível do card */
-    border-radius: 15px;
-    height: 200px; /* Definindo uma altura fixa para todas as imagens */
-    object-fit: cover; /* Garante que a imagem mantenha a proporção e cubra todo o espaço */
+        border-radius: 15px;
+        height: 200px; /* Definindo uma altura fixa para todas as imagens */
+        object-fit: cover; /* Garante que a imagem mantenha a proporção e cubra todo o espaço */
     }
 }
 
@@ -199,7 +207,7 @@ footer {
     .cards{
         display: flex;
         flex-direction: column-reverse;
-        padding: 20px;
+        padding: 10px;
         align-items: center;
         justify-content: center;
         margin-top: 10px;

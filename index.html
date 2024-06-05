@@ -16,9 +16,9 @@
                 <li class="nav-item"><a href="#problema">Problema</a></li>
                 <li class="nav-item"><a href="#tecnologia">Tecnologia</a></li>
                 <li class="nav-item"><a href="#objetivo">Objetivo</a></li>
-                <li class="nav-item"><a href="#">Público</a></li>
-                <li class="nav-item"><a href="#">Solução</a></li>
-                <li class="nav-item"><a href="#">Impacto</a></li>
+                <li class="nav-item"><a href="#publico">Público</a></li>
+                <li class="nav-item"><a href="#sol-imp">Solução</a></li>
+                <li class="nav-item"><a href="#sol-imp">Impacto</a></li>
             </ul>
             <div class="menu">
                 <span class="bar"></span>
@@ -28,9 +28,9 @@
         </nav>
     </header>
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <div class="home-text">
-                <h1 class="text-h1">Conheça a TurtleSea</h1>
+                <h1 class="text-h1" id="home">Conheça a TurtleSea</h1>
                 <p>A tartaruguinha robótica que monitora nossas costas, detectando vazamentos de óleo para garantir praias mais limpas e um oceano mais seguro!</p>
                 <a href="./login.html" class="home-btn">COMPRAR A TURTLE</a>
         </section>
@@ -46,21 +46,22 @@
                     <div class="card1">
                         <img class="card-img" src="./image/cards/oleo-nordeste.jpeg" alt="" width="100%">
                         <h4>Óleo no nordeste</h4>
-                        <p class="textos">Em 2020, um derramamento de óleo no litoral nordestino do Brasil contaminou extensas áreas costeiras, causando danos à vida marinha, ecossistemas e muitas comunidades locais.</p>
+                        <p class="card-textos">Em 2020, um derramamento de óleo no litoral nordestino do Brasil contaminou extensas áreas costeiras, causando danos à vida marinha, ecossistemas e muitas comunidades locais.</p>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="card1">
                         <img class="card-img" src="./image/cards/guanabara.jpg" alt="" width="100%">
                         <h4>Guanabara Bay </h4>
-                        <p class="textos">O derramamento de óleo na Baía de Guanabara, nos anos 2000, causou danos ambientais significativos, afetando a vida marinha, ecossistemas e comunidades locais.</p>
+                        <p class="card-textos">O derramamento de óleo na Baía de Guanabara em 2000 contaminou águas e sedimentos, matou espécies marinhas, prejudicou manguezais e impactou economicamente pescadores locais, destacando a importância de prevenção e resposta rápida a desastres ambientais.
+                        </p>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="card1">
                         <img class="card-img" src="./image/cards/deepwater.jpeg" alt="" width="100%">
                         <h4>Deepwater Horizon</h4>
-                        <p class="textos">O grande derramamento de óleo da Deepwater Horizon, em 2010,  causou graves danos ambientais, afetando ecossistemas marinhos, economias costeiras e a saúde humana.</p>
+                        <p class="card-textos">O grande derramamento de óleo da Deepwater Horizon, em 2010,  causou graves danos ambientais, afetando ecossistemas marinhos, economias costeiras e a saúde humana.</p>
                     </div>
                 </div>
             </div>
@@ -72,38 +73,39 @@
         <section id="tecnologia" class="secoes">
             <div class="conteudo">
                 <h3>Tecnologia</h3>
-                <p class="textos">Essas tecnologias são importantes para o projeto TurtleSea porque permitem a detecção eficiente de vazamentos de óleo no ambiente marinho, bem como o desenvolvimento de uma interface de usuário intuitiva para os operadores do dispositivo. Sua combinação proporciona uma solução completa e eficaz para a proteção dos ecossistemas marinhos contra os impactos prejudiciais do derramamento de óleo.</p>
+                <p class="textos">Tecnologias são importantes para o projeto TurtleSea porque permitem a detecção eficiente de vazamentos de óleo no ambiente marinho, bem como o desenvolvimento de uma interface de usuário intuitiva para os operadores do dispositivo. A combinação dessas tecnologias proporciona uma solução completa e eficaz para a proteção dos ecossistemas marinhos contra os impactos prejudiciais do derramamento de óleo.</p>
                 
             </div>
             <div class="cards">
                 <div class="cards">
                     <div class="card1">
                         <img class="card-img" src="./image/cards/arduino.jpeg" alt="" width="100%">
-                        <h4>Derramamento de óleo no nordeste</h4>
-                        <p class="textos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, culpa. Voluptas laborum, sapiente</p>
+                        <h4>Arduino</h4>
+                        <p class="card-textos">O Arduino será crucial para o desenvolvimento do robô como um todo, conectando todos os sensores necessários para a detecção de óleo, além de gerenciar a programação que faz esses sensores funcionarem de forma integrada e eficiente. Ele permitirá uma resposta rápida e precisa a vazamentos detectados.</p>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="card1">
                         <img class="card-img" src="./image/cards/python.jpeg" alt="" width="100%">
-                        <h4>Derramamento de óleo no nordeste</h4>
-                        <p class="textos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, culpa. Voluptas laborum, sapiente</p>
+                        <h4>Python</h4>
+                        <p class="card-textos">Python é essencial para o desenvolvimento da aplicação e do menu. Ele permite uma integração fácil com bibliotecas para criar interfaces gráficas intuitivas e gerenciar a comunicação entre os sensores do Arduino e o software, garantindo um funcionamento eficiente e amigável do sistema.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Objetivo -->
+
+        <!-- 3o Objetivo -->
         <section id="objetivo" class="secoes" >
             <div class="conteudo">
                 <h3>Objetivo</h3>
-                <p class="textos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatem, eligendi, autem similique quos quisquam architecto accusamus itaque vitae aspernatur quis ipsum perferendis fugit. Consequatur eveniet id reprehenderit esse quia!</p>
+                <p class="textos">O objetivo principal da TurtleSea é monitorar e proteger as costas, detectando vazamentos de óleo para garantir praias mais limpas e um oceano mais seguro, preservando a biodiversidade marinha e ajudando comunidades locais.</p>
                 <p class="textos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ipsa dolorem pariatur corrupti similique obcaecati dolore a recusandae odio tempore amet est maxime accusantium voluptatibus quam quaerat necessitatibus odit sequi earum nobis, nesciunt itaque. Laudantium suscipit distinctio reprehenderit aliquid eum enim rem quasi dicta mollitia similique dolorum debitis, cum tenetur a omnis autem atque porro odit, asperiores ad. Eius, ducimus.</p>
             </div>
         </section>
 
-        <!-- Público -->
-        <section id="objetivo" class="secoes">
+        <!-- 4o Público -->
+        <section id="publico" class="secoes">
             <div class="conteudo">
                 <h3>Público</h3>
                 <p class="textos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, voluptatum iure est pariatur eaque exercitationem esse voluptatem atque eius ea reiciendis, dolorum corrupti harum molestiae. Incidunt mollitia quas expedita explicabo?</p>
@@ -112,22 +114,22 @@
                         <div class="card1">
                             <img class="card-img" src="./image/cards/oleo-nordeste.jpeg" alt="" width="100%">
                             <h4>Derramamento de óleo no nordeste</h4>
-                            <p class="textos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, culpa. Voluptas laborum, sapiente</p>
+                            <p class="card-textos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, culpa. Voluptas laborum, sapiente</p>
                         </div>
                     </div>
                     <div class="cards">
                         <div class="card1">
                             <img class="card-img" src="./image/cards/oleo-nordeste.jpeg" alt="" width="100%">
                             <h4>Derramamento de óleo no nordeste</h4>
-                            <p class="textos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, culpa. Voluptas laborum, sapiente</p>
+                            <p class="card-textos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, culpa. Voluptas laborum, sapiente</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Solução -->
-        <section id="publico" class="secoes">
+        <!-- 5o Solução e 6o impacto -->
+        <section id="sol-imp" class="secoes">
             <div class="conteudo">
                 <h3>Solução e Impacto</h3>
                 <p class="textos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, voluptatum iure est pariatur eaque exercitationem esse voluptatem atque eius ea reiciendis, dolorum corrupti harum molestiae. Incidunt mollitia quas expedita explicabo?</p>
@@ -135,13 +137,13 @@
                     <div class="cards">
                         <div class="card1">
                             <h4> Solução </h4>
-                            <p class="textos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, culpa. Voluptas laborum, sapiente</p>
+                            <p class="card-textos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, culpa. Voluptas laborum, sapiente</p>
                         </div>
                     </div>
                     <div class="cards">
                         <div class="card1">
                             <h4> Impacto </h4>
-                            <p class="textos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, culpa. Voluptas laborum, sapiente</p>
+                            <p class="card-textos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, culpa. Voluptas laborum, sapiente</p>
                         </div>
                     </div>
                 </div>
