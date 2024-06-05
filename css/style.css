@@ -1,24 +1,12 @@
 /*Rotas de estilo*/
 @import url(./roots.css);
+@import url(./padrao.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /*Menu e barra de navegação*/
 @import url(./menu.css);
+@import url(./pag-inicial.css);
 
-*{
-    margin: 0;
-    /* padding: 0; */
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    list-style: none;
-    text-decoration: none;
-}
-
-
-body{
-    color: var(--dark);
-    background: var(--light);
-}
 
 /*****************************F****************************/
 
@@ -98,18 +86,6 @@ body{
 }
 
 
-.btn {
-    border: 3px solid var(--color-pink);
-    padding: 0px 30px;
-    background-color: var(--color-pink);
-    border-radius: 70px;
-    transition: background-color var(--transition);
-
-    &:hover {
-        background-color: transparent;
-    }
-}
-
 /* Footer */
 footer {
     display: flex;
@@ -145,7 +121,9 @@ footer {
     font-size: 18px;
 }
 
+
 /* RESPONSIVO */
+
 @media (max-width:1145px){
     .secoes{
         padding: 30px;
