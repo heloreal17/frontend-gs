@@ -40,7 +40,7 @@
                                     <p>Pronto para colocar sua turtle no mar?</p>
                                 </div>
                             
-                                <form>
+                                <form onsubmit="return false">
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                             <label for="name">Nome</label>
@@ -54,22 +54,31 @@
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                             <label for="quantity">Quantidade</label>
-                                            <input type="number" class="form-control" id="quantity" name="quantity" required>
+                                            <input type="number"  class="form-control" id="quantity" name="quantity" required>
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <label for="coupon">Cupom de Desconto</label>
-                                            <input type="text" class="form-control" id="coupon" name="coupon">
+                                            <label for="cupom">Cupom de Desconto</label>
+                                            <input type="text" class="form-control" id="cupom" name="cupom">
                                         </div>
                                     </div>
                                     <div class="form-group text-center">
+                                        <div>
+                                            Utilize o cupom turtlesea123 para 50% de desconto
+                                        </div>
+                                        <div>
+                                            <button onclick="aplicarDesconto()" class="btn btn-outline-success btn-sm mt-2">Calcular valor</button>
+                                        </div>
                                         <label for="total">Valor Total: R$ <span id="total">0,00</span></label>
+
                                     </div>
+                                    
+
                                     <div class="form-row">
                                         <div class="col">
-                                            <button type="submit" class="btn btn-block btn-success">Pagar</button>
+                                            <button type="submit" onclick="enviar()" class="btn btn-block btn-success">Pagar</button>
                                         </div>
                                         <div class="col">
-                                            <button type="reset" class="btn btn-block btn-danger">Cancelar</button>
+                                            <button type="reset" onclick="cancelar()" class="btn btn-block btn-danger">Cancelar</button>
                                         </div>
                                     </div>
                                 </form>
@@ -81,3 +90,5 @@
         </section>
     </main>
 </body>
+<script src="./scripts/script.js"></script>
+</html>
